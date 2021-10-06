@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOL - Challenge</title>
+</head>
+<body>
+    <nav id="header">
+        <h1>Dólar MEP</h1>
+    </nav>
+    <main>
+    <section id="main-description">
+        <h2>¿Qué es el Dólar MEP?</h2>
+        <p >
+            Comprar bonos con pesos (AL30) y venderlos en su especie 0 
+            (AL300), obteniendo por resultado dólares en tu Cuenta de Inversión
+             de Argentina las veces que quieras.
+            <a href="https://www.invertironline.com/" target="_blank">
+             Requisitos.
+            </a>
+        </p>
+        <figure id="steps-container">
+            <div class="step-card">
+                <span class="material-icons-outlined" id="active">
+                    attach_money
+                </span>
+                <h2>1. Inicio</h2>
+                <p>Creas una orden de compra del bono AL30 con pesos.</p>
+            </div>
+            <hr/>
+            <div class="step-card">
+                <span class="material-icons-outlined">
+                    watch_later
+                </span>
+                <h2>2. Espero</h2>
+                <p>El bono debe cumplir un plazo minimo de tenencia de 1 día (Parking)</p>
+            </div>
+            <hr/>
+            <div class="step-card">
+                <span class="material-icons-outlined">
+                    attach_money
+                </span>
+                <h2>3. Listo</h2>
+                <p> Se creará una venta automática del bono en su especie en dólares AL30D</p>
+            </div>
+        </figure>
+        <article id="warning">
+            <p>
+                <strong>Importante:</strong> Debido a la Comunicación "A" 7340, al concretarse la operación de Dólar MEP,
+                tené en cuenta que se te realizará una extracción automática por el saldo resultante de dicha transacción.
+            </p>
+        </article>
+    </section>
+    <div id="cotization-value">
+        <article>
+            <p>Valor de referencia de Dólar MEP 
+                <strong>ARS 170,94</strong>
+                <span class="material-icons-outlined">
+                info
+                </span>
+            </p>
+        </article>
+        <article>
+            <a href="https://www.invertironline.com/" target="_blank"><strong>Detalle de Operaciones</strong></a>
+        </article>
+    </div>
+    <section id="operations-form">
+        <div>
+        <h3>Ingrese un monto en pesos</h3>
+        </div>
+        <div id="total-sum">
+            <p> <strong>*Estimado a acreditarse</strong> </p>
+            <p id="amount">US$ 00,00</p>
+        </div>
+    </section>
+    </main>
+    
+</body>
+</html>
