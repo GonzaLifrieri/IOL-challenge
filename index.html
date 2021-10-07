@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOL - Challenge</title>
@@ -29,15 +30,15 @@
         </p>
         <figure id="steps-container">
             <div class="step-card">
-                <span class="material-icons-outlined" id="active">
-                    attach_money
+                <span class="card-icon-active">
+                    $
                 </span>
                 <h2>1. Inicio</h2>
                 <p>Creas una orden de compra del bono AL30 con pesos.</p>
             </div>
             <hr/>
             <div class="step-card">
-                <span class="material-icons-outlined">
+                <span class="card-icon material-icons-outlined" style="font-size: 2rem;">
                     watch_later
                 </span>
                 <h2>2. Espero</h2>
@@ -45,8 +46,8 @@
             </div>
             <hr/>
             <div class="step-card">
-                <span class="material-icons-outlined">
-                    attach_money
+                <span class="card-icon">
+                    US$
                 </span>
                 <h2>3. Listo</h2>
                 <p> Se creará una venta automática del bono en su especie en dólares AL30D</p>
@@ -68,19 +69,33 @@
                 </span>
             </p>
         </article>
-        <article>
-            <a href="https://www.invertironline.com/" target="_blank"><strong>Detalle de Operaciones</strong></a>
-        </article>
+        <a href="https://www.invertironline.com/" target="_blank"><strong>Detalle de Operaciones</strong></a>
     </div>
     <section id="operations-form">
         <div>
-        <h3>Ingrese un monto en pesos</h3>
+            <div id="operations-header">
+                <h3>Ingrese un monto en pesos</h3>
+                <div id="available-amount">
+                    <p>Disponible: AR$ 809.612,21</p>
+                    <span>|</span>
+                    <div>
+                        <button>Usar todo</button>
+                    </div>
+                </div>
+            </div>
+            <input type="number" name="number" placeholder="500.000">
+            <p style="margin-top: 5px;">Minimo $500 | Máximo $500.000</p>
+            <p style="margin: 5% 0% 0% 0%">Operación a realizarse en plazo Contado Inmediato (CI) y a Precio de Mercado.
+                <br>
+                Las órdenes de compra y venta de valores negociables no son revocables.
+            </p>
         </div>
         <div id="total-sum">
             <p> <strong>*Estimado a acreditarse</strong> </p>
             <p id="amount">US$ 00,00</p>
         </div>
     </section>
+    <div id="submit-button"><button type="button">Siguente</button></div>
     </main>
     
 </body>
