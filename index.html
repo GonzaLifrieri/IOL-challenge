@@ -20,7 +20,7 @@
     <main>
     <section id="main-description">
         <h2>¿Qué es el Dólar MEP?</h2>
-        <p >
+        <p id="description">
             Comprar bonos con pesos (AL30) y venderlos en su especie 0 
             (AL300), obteniendo por resultado dólares en tu Cuenta de Inversión
              de Argentina las veces que quieras.
@@ -33,24 +33,30 @@
                 <span class="card-icon-active">
                     $
                 </span>
-                <h2>1. Inicio</h2>
-                <p>Creas una orden de compra del bono AL30 con pesos.</p>
+                <div class="step-card-description">
+                    <h2>1. Inicio</h2>
+                    <p>Creas una orden de compra del bono AL30 con pesos.</p>
+                </div>
             </div>
             <hr/>
             <div class="step-card">
                 <span class="card-icon material-icons-outlined" style="font-size: 2rem;">
                     watch_later
                 </span>
-                <h2>2. Espero</h2>
-                <p>El bono debe cumplir un plazo minimo de tenencia de 1 día (Parking)</p>
+                <div class="step-card-description">
+                    <h2>2. Espero</h2>
+                    <p>El bono debe cumplir un plazo minimo de tenencia de 1 día (Parking)</p>
+                </div>
             </div>
             <hr/>
             <div class="step-card">
                 <span class="card-icon">
                     US$
                 </span>
-                <h2>3. Listo</h2>
-                <p> Se creará una venta automática del bono en su especie en dólares AL30D</p>
+                <div class="step-card-description">
+                    <h2>3. Listo</h2>
+                    <p> Se creará una venta automática del bono en su especie en dólares AL30D</p>
+                </div>
             </div>
         </figure>
         <article id="warning">
@@ -61,41 +67,49 @@
         </article>
     </section>
     <div id="cotization-value">
-        <article>
+        <div id="info-box">
             <p>Valor de referencia de Dólar MEP 
                 <strong>ARS 170,94</strong>
                 <span class="material-icons-outlined">
                 info
                 </span>
             </p>
-        </article>
+        </div>
         <a href="https://www.invertironline.com/" target="_blank"><strong>Detalle de Operaciones</strong></a>
     </div>
     <section id="operations-form">
-        <div>
+        <div id="operations-form-left">
             <div id="operations-header">
                 <h3>Ingrese un monto en pesos</h3>
                 <div id="available-amount">
                     <p>Disponible: AR$ 809.612,21</p>
-                    <span>|</span>
+                    <p id="bar" style="margin: auto 25px;"> | </p>
                     <div>
-                        <button>Usar todo</button>
+                        <button> Usar todo</button>
                     </div>
                 </div>
             </div>
             <input type="number" name="number" placeholder="500.000">
-            <p style="margin-top: 5px;">Minimo $500 | Máximo $500.000</p>
+            <p style="margin-top: 5px;">Minimo $ 500 | Máximo $ 500.000</p>
             <p style="margin: 5% 0% 0% 0%">Operación a realizarse en plazo Contado Inmediato (CI) y a Precio de Mercado.
-                <br>
-                Las órdenes de compra y venta de valores negociables no son revocables.
             </p>
+            <p>Las órdenes de compra y venta de valores negociables no son revocables.</p>
         </div>
         <div id="total-sum">
             <p> <strong>*Estimado a acreditarse</strong> </p>
             <p id="amount">US$ 00,00</p>
         </div>
     </section>
-    <div id="submit-button"><button type="button">Siguente</button></div>
+    <div id="submit-button">
+        <a  id="details-link-mobile" href="https://www.invertironline.com/" target="_blank">
+            <strong>
+                Detalle de Operaciones
+            </strong>
+        </a>
+        <button type="submit">
+            Siguente
+        </button>
+    </div>
     </main>
     
 </body>
