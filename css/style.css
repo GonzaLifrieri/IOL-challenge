@@ -120,7 +120,7 @@ hr {
   margin-top: 20px;
 }
 
-#warning{
+.warning{
   background-color: #ddf5fc;
   padding: 0px 9px;
   border-radius: 10px;
@@ -146,7 +146,8 @@ hr {
 }
 
 #info-box{
-  display: inline;
+  display: flex;
+  align-items: baseline;
 }
 
 
@@ -185,6 +186,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  color: #41436f;
 }
 
 #available-amount{ 
@@ -241,6 +243,7 @@ input{
   color: gray;
   font: inherit;
   padding: 15px 30px;
+  box-shadow: 1px 3px #e1e1eb;
 }
 
 ::placeholder{
@@ -261,6 +264,14 @@ input::-webkit-inner-spin-button {
 }
 
 
+
+
+
+/*------------MOBILE VERSION--------- */
+
+
+
+
 @media only screen and (max-width: 850px) {
   main{
     width: 100%;
@@ -275,6 +286,22 @@ input::-webkit-inner-spin-button {
     font-size: 1.5rem;
     margin: 10px;
     margin-left: 0;
+  }
+
+  #main-description #description{
+    padding: 0%;
+  }
+
+  #main-description{
+    width: 100%;
+    align-items: flex-start;
+  }
+  #main-description-title{
+    margin: 0;
+  }
+
+  #main-description p{
+    text-align: left;
   }
 
   #steps-container{
@@ -307,22 +334,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
   }
 
-  #main-description #description{
-    padding: 0%;
-  }
-
-  #main-description{
-    width: 100%;
-    align-items: flex-start;
-  }
-  #main-description-title{
-    margin: 0;
-  }
-
-  #main-description p{
-    text-align: left;
-  }
-
   .step-card-description{
     padding-left: 30px;
   }
@@ -340,7 +351,7 @@ input::-webkit-inner-spin-button {
     margin: 0 0 0 23px;
   }
 
-  #warning{
+  .warning{
     margin: 0;
   }
 
@@ -396,8 +407,9 @@ input::-webkit-inner-spin-button {
     color: #6439FF;
    }
 
-   h3{
+  h3{
      margin: 0px;
+     font-size: 1.5rem;
    }
 
 
