@@ -20,31 +20,31 @@ nav h1{
   margin: auto;
 }
 
-#main-description{
+#main-description-container{
   display:flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
-#main-description h2{
+#main-description-container h2{
   font-size: 1.2rem;
 }
 
 
-#main-description #description{
+#main-description-container #description{
   padding: 0% 20%;
 }
 
-#main-description p{
+#main-description-container p{
   text-align: center;
 }
 
-#main-description a{
+#main-description-container a{
   color: #6439FF;
   text-decoration: none;
 }
-#main-description a:visited{
+#main-description-container a:visited{
   color: #6439FF;
   text-decoration: none;
 }
@@ -120,7 +120,7 @@ hr {
   margin-top: 20px;
 }
 
-.warning{
+.warning-box{
   background-color: #ddf5fc;
   padding: 0px 9px;
   border-radius: 10px;
@@ -151,7 +151,7 @@ hr {
 }
 
 
-#operations-form{
+#operations-form-container{
   background-color: #ECEEFB;
   border-radius: 5px;
   display: flex;
@@ -159,7 +159,7 @@ hr {
   padding: 20px;
 }
 
-#operations-form p{
+#operations-form-container p{
   color: #8e8fb0;
 }
 
@@ -212,17 +212,21 @@ hr {
   margin: 15px 0px;
 }
 
+#bar{
+  margin: 0px 25px;
+}
+
 #details-link-mobile{
   visibility: hidden
 }
 
-#submit-button{
+#submit-button-container{
   display: flex;
   justify-content:flex-end;
   margin: 2% 0%;
 }
 
-#submit-button button{
+#submit-button-container button{
   background-color: #6439FF;
   color: #fff;
   border: none;
@@ -288,11 +292,11 @@ input::-webkit-inner-spin-button {
     margin-left: 0;
   }
 
-  #main-description #description{
+  #main-description-container #description{
     padding: 0%;
   }
 
-  #main-description{
+  #main-description-container{
     width: 100%;
     align-items: flex-start;
   }
@@ -300,7 +304,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
   }
 
-  #main-description p{
+  #main-description-container p{
     text-align: left;
   }
 
@@ -351,7 +355,7 @@ input::-webkit-inner-spin-button {
     margin: 0 0 0 23px;
   }
 
-  .warning{
+  .warning-box{
     margin: 0;
   }
 
@@ -363,7 +367,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
   }
 
-  #operations-form{
+  #operations-form-container{
     flex-direction: column;
   }
 
@@ -392,28 +396,28 @@ input::-webkit-inner-spin-button {
     color: #6439FF;
     }
 
-  #submit-button{
+    #submit-button-container{
     margin: 80px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     text-align: center;
   }
   
-  #submit-button a{
+  #submit-button-container a{
     color: #6439FF;
   }
 
-  #submit-button a:visited{
+  #submit-button-container a:visited{
     color: #6439FF;
    }
 
-  h3{
+  #operations-header h3{
      margin: 0px;
      font-size: 1.5rem;
    }
 
 
-  #submit-button button{
+   #submit-button-container button{
    margin: 20px 0px;
    padding: 15px;
    width: 100%;

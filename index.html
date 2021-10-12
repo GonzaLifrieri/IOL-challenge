@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> -->
     <script src="js/main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IOL - Challenge</title>
@@ -18,16 +17,16 @@
         <h1>Dólar MEP</h1>
     </nav>
     <main>
-    <section id="main-description">
-        <h2 id="main-description-title">¿Qué es el Dólar MEP?</h2>
-        <p id="description">
-            Comprar bonos con pesos (AL30) y venderlos en su especie 0 
-            (AL300), obteniendo por resultado dólares en tu Cuenta de Inversión
-             de Argentina las veces que quieras.
+    <section id="main-description-container">
+            <h2 id="main-description-title">¿Qué es el Dólar MEP?</h2>
+            <p id="description">
+                Comprar bonos con pesos (AL30) y venderlos en su especie 0 
+                (AL300), obteniendo por resultado dólares en tu Cuenta de Inversión
+                de Argentina las veces que quieras.
             <a href="https://www.invertironline.com/" target="_blank">
-             Requisitos.
+                Requisitos.
             </a>
-        </p>
+            </p>
         <figure id="steps-container">
             <div class="step-card">
                 <span class="card-icon-active">
@@ -59,7 +58,7 @@
                 </div>
             </div>
         </figure>
-        <div class="warning">
+        <div class="warning-box">
             <p>
                 <strong>Importante:</strong> Debido a la Comunicación "A" 7340, al concretarse la operación de Dólar MEP,
                 tené en cuenta que se te realizará una extracción automática por el saldo resultante de dicha transacción.
@@ -77,13 +76,13 @@
         </div>
         <a href="https://www.invertironline.com/" target="_blank"><strong>Detalle de Operaciones</strong></a>
     </div>
-    <section id="operations-form">
+    <section id="operations-form-container">
         <div id="operations-form-left">
             <div id="operations-header">
                 <h3>Ingrese un monto en pesos</h3>
                 <div id="available-amount">
                     <p>Disponible: AR$ 809.612,21</p>
-                    <p id="bar" style="margin: 0px 25px;"> | </p>
+                    <p id="bar"> | </p>
                     <div>
                         <button> Usar todo</button>
                     </div>
@@ -100,13 +99,13 @@
             <p id="amount">US$ 00,00</p>
         </div>
     </section>
-    <div id="submit-button">
+    <div id="submit-button-container">
         <a  id="details-link-mobile" href="https://www.invertironline.com/" target="_blank">
             <strong>
                 Detalle de Operaciones
             </strong>
         </a>
-        <button type="submit">
+        <button type="submit" name="monto">
             Siguente
         </button>
     </div>
