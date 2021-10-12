@@ -1,7 +1,7 @@
 # IOL-challenge
 
 
-<h3 align="center">Maquetador Challenge</h3>
+<h1 align="left">Maquetador Challenge</h1>
 
 <h2 align="left">Objetivo</h2>
 
